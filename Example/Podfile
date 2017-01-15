@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'CountryCodeSelect_Example' do
+  pod 'CountryCodeSelect', :path => '../'
+
+  target 'CountryCodeSelect_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
