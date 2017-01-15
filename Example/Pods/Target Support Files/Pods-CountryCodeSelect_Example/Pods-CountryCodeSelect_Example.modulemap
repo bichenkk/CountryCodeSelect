@@ -1,0 +1,6 @@
+framework module Pods_CountryCodeSelect_Example {
+  umbrella header "Pods-CountryCodeSelect_Example-umbrella.h"
+
+  export *
+  module * { export * }
+}

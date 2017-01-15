@@ -1,25 +1,73 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6211" systemVersion="14A298i" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16C67" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="PNS-1V-75q">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6204"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
-        <scene sceneID="ufC-wZ-h7g">
+        <scene sceneID="IkM-r2-rtS">
             <objects>
-                <viewController id="vXZ-lx-hvc" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="PNS-1V-75q" customClass="ViewController" customModule="CountryCodeSelect_Example" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
-                        <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
+                        <viewControllerLayoutGuide type="top" id="SVU-ci-EHz"/>
+                        <viewControllerLayoutGuide type="bottom" id="yck-Tm-WgT"/>
                     </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
-                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    <view key="view" contentMode="scaleToFill" id="1ar-8z-Mpd">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Dot-Tv-Lqs">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="333.5"/>
+                                <subviews>
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Country Code" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="nPR-th-4AR">
+                                        <rect key="frame" x="87.5" y="142" width="200" height="50"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="HmM-Zd-dQn"/>
+                                            <constraint firstAttribute="width" constant="200" id="L4P-8F-3tk"/>
+                                        </constraints>
+                                        <nil key="textColor"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="r07-Ph-nMN">
+                                        <rect key="frame" x="87.5" y="192" width="200" height="1"/>
+                                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="1" id="ydP-4A-Kuh"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstItem="nPR-th-4AR" firstAttribute="centerX" secondItem="Dot-Tv-Lqs" secondAttribute="centerX" id="4ui-u8-uJi"/>
+                                    <constraint firstItem="r07-Ph-nMN" firstAttribute="width" secondItem="nPR-th-4AR" secondAttribute="width" id="9B1-0d-zpy"/>
+                                    <constraint firstItem="r07-Ph-nMN" firstAttribute="leading" secondItem="nPR-th-4AR" secondAttribute="leading" id="ISq-ZX-fxJ"/>
+                                    <constraint firstItem="nPR-th-4AR" firstAttribute="centerY" secondItem="Dot-Tv-Lqs" secondAttribute="centerY" id="Mhl-D0-MTx"/>
+                                    <constraint firstItem="r07-Ph-nMN" firstAttribute="top" secondItem="nPR-th-4AR" secondAttribute="bottom" id="kTX-xe-ZgJ"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Dot-Tv-Lqs" firstAttribute="height" secondItem="1ar-8z-Mpd" secondAttribute="height" multiplier="0.5" id="C2g-jz-wYu"/>
+                            <constraint firstAttribute="trailing" secondItem="Dot-Tv-Lqs" secondAttribute="trailing" id="OG0-xH-msf"/>
+                            <constraint firstItem="Dot-Tv-Lqs" firstAttribute="top" secondItem="1ar-8z-Mpd" secondAttribute="top" id="tZ2-H1-WBY"/>
+                            <constraint firstItem="Dot-Tv-Lqs" firstAttribute="leading" secondItem="1ar-8z-Mpd" secondAttribute="leading" id="uHd-Oz-OEh"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="countryCodeField" destination="nPR-th-4AR" id="KsE-1Q-jZb"/>
+                    </connections>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="yGA-P5-Zk3" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="74" y="137"/>
         </scene>
     </scenes>
 </document>

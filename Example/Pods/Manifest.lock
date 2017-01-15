@@ -1,0 +1,16 @@
+PODS:
+  - CountryCodeSelect (0.1.0)
+
+DEPENDENCIES:
+  - CountryCodeSelect (from `../`)
+
+EXTERNAL SOURCES:
+  CountryCodeSelect:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  CountryCodeSelect: aeabe5481fcd02c2ca370adf1d8c5ed670f6ed0a
+
+PODFILE CHECKSUM: 85f649142f6747094425f2446752050e3c8981c8
+
+COCOAPODS: 1.1.1

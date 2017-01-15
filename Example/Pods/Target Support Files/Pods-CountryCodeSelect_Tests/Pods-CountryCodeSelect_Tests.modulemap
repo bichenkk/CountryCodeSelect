@@ -1,0 +1,6 @@
+framework module Pods_CountryCodeSelect_Tests {
+  umbrella header "Pods-CountryCodeSelect_Tests-umbrella.h"
+
+  export *
+  module * { export * }
+}

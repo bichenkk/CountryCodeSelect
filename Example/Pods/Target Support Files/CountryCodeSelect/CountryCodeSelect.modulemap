@@ -1,0 +1,6 @@
+framework module CountryCodeSelect {
+  umbrella header "CountryCodeSelect-umbrella.h"
+
+  export *
+  module * { export * }
+}
